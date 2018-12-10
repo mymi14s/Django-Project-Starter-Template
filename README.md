@@ -1,11 +1,11 @@
 # Django-Project-Starter-Template
 """
-Author: Anthony C. Emmanuel
-Title: Django Project Starter Template
-Version: 1.0.0
-Language: Python 3.6
-Date: 07-12-2018
-License: 3-clause BSD
+Author: Anthony C. Emmanuel<br>
+Title: Django Project Starter Template<br>
+Version: 1.0.0<br>
+Language: Python 3.6<br>
+Date: 07-12-2018<br>
+License: 3-clause BSD<br>
 """
 
 A Django Template for creating basic webapp with basic features such as Authentication System, User Profile, etc.
