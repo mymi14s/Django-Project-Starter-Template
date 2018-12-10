@@ -11,15 +11,17 @@ License: 3-clause BSD
 A Django Template for creating basic webapp with basic features such as Authentication System, User Profile, etc.
 The Template can be used out of the box for any type of website/webapp
 <h1> Screen Shots </h1>
+<font align="center">
 <ul>
-  <li><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/index.png" alt=""/></li>
-  <li><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/Login_without_social_button.png"/></li>
-  <li><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/Login_with_social_button.png"/></li>
-  <li><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/Signup.png"/></li>
-  <li><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/home.png"/></li>
-  <li><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/profile.png"/></li>
-  <li><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/admin.png"/></li>
+  <img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/index.png" alt=""/>
+  <br><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/Login_without_social_button.png"/>
+  <br><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/login_with_social_button.png"/>
+  <br><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/Signup.png"/>
+  <br><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/home.png"/>
+  <br><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/profile.png"/>
+  <br><img src="https://raw.githubusercontent.com/mymi14s/mymi14s.github.io/master/admin.png"/>
 </ul>
+</font>
 
 <h1>Language Requirement</h1>
   - Python 3.6 (Minimum >= 3.5)
