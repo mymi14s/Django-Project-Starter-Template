@@ -76,6 +76,15 @@ The Template can be used out of the box for any type of website/webapp
     - Open 127.0.0.1:8000 and login
 
 + 4. OPTIONAL CONFIGURATION
+  - EMAIL Settings
+    - Open core/settings.py and edit with your detail on line 198 to 202
+
+      - EMAIL_USE_TLS = True
+      - EMAIL_HOST = 'Your SMTP'
+      - EMAIL_HOST_USER = 'YOUR EMAIL'
+      - EMAIL_HOST_PASSWORD = 'YOUR PASSWORD'
+      - EMAIL_PORT = 587
+
   - MYSQL Configuration requires Mysqlclient
   - Visit <a href="https://pypi.org/project/mysqlclient/">Mysql Client</a>
   - Use the instruction provided.
