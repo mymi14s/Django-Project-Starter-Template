@@ -99,9 +99,9 @@ The Template can be used out of the box for any type of website/webapp
     - Setup social buttons from core/settings.py from line 62  
 
   - MYSQL Configuration requires Mysqlclient
-  - Visit <a href="https://pypi.org/project/mysqlclient/">Mysql Client</a>
-  - Use the instruction provided.
-  - Edit core/settings with your mysql database info from line 128.
+    - Visit <a href="https://pypi.org/project/mysqlclient/">Mysql Client</a>
+    - Use the instruction provided.
+    - Edit core/settings with your mysql database info from line 128.
 
 + CREDITS
   - Anthony N. Dorothy
