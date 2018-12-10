@@ -57,6 +57,7 @@ The Template can be used out of the box for any type of website/webapp
   - Built for easy modification and custom editing
 
 <h1>How to Use</h1>
+
 + Install Python3 and Virtual Environment
   - Install Python3 from <a href="https://www.python.org">Python Software Foundation</a>
   - Create Virtual Environment
@@ -72,6 +73,7 @@ The Template can be used out of the box for any type of website/webapp
   - Generate SECRET_KEY at <a href="https://www.miniwebtool.com/django-secret-key-generator/">miniwebtool</a>
   - Edit core/settings.py line 36
     - Change SECRET_KEY = '<font color="red">9ea*4cwjzn@e9-qhsmkj^%94$8e$=0rgb@%6ort#9(sacs15ui</font>' to new KEY
+
   - Create SUPERUSER
     - $ python manage.py createsuperuser
     - $ python manage.py runserver
