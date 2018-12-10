@@ -1,5 +1,5 @@
 # Django-Project-Starter-Template
-"""
+"""<br>
 Author: Anthony C. Emmanuel<br>
 Title: Django Project Starter Template<br>
 Version: 1.0.0<br>
