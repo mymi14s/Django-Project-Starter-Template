@@ -69,10 +69,15 @@ The Template can be used out of the box for any type of website/webapp
   - $ cd Django-Project-Starter-Template/src
   - $ pip install -r requirements.txt
 
-+ Create SECRET_KEY and SUPERUSER
++ Create SECRET_KEY, MIGRATIONS and SUPERUSER
   - Generate SECRET_KEY at <a href="https://www.miniwebtool.com/django-secret-key-generator/">miniwebtool</a>
   - Edit core/settings.py line 36
     - Change SECRET_KEY = '<font color="red">9ea*4cwjzn@e9-qhsmkj^%94$8e$=0rgb@%6ort#9(sacs15ui</font>' to new KEY
+
+  - Make Migrations
+    - $ python manage.py migrate
+    - $ python manage.py makemigrations
+    - $ python manage.py migrate
 
   - Create SUPERUSER
     - $ python manage.py createsuperuser
