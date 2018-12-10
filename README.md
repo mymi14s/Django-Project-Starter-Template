@@ -8,7 +8,7 @@ Date: 07-12-2018<br>
 License: 3-clause BSD<br>
 """
 
-A Django Template for creating basic webapp with basic features such as Authentication System, User Profile, etc.
+A Django Template for creating basic webapp with features such as Authentication System, User Profile, etc.
 The Template can be used out of the box for any type of website/webapp
 <h1> Screen Shots </h1>
 <font align="center">
