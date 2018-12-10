@@ -57,18 +57,18 @@ The Template can be used out of the box for any type of website/webapp
   - Built for easy modification and custom editing
 
 <h1>How to Use</h1>
-+ 1. Install Python3 and Virtual Environment
++ Install Python3 and Virtual Environment
   - Install Python3 from <a href="https://www.python.org">Python Software Foundation</a>
   - Create Virtual Environment
     - $ mkdir django-starter && cd django-starter
     - $ python3 -m venv myenv && source myenv/bin/activate
 
-+ 2. Pull source from github
++ Pull source from github
   - $ git clone https://github.com/mymi14s/Django-Project-Starter-Template.git
   - $ cd Django-Project-Starter-Template/src
   - $ pip install -r requirements.txt
 
-+ 3. Create SECRET_KEY and SUPERUSER
++ Create SECRET_KEY and SUPERUSER
   - Generate SECRET_KEY at <a href="https://www.miniwebtool.com/django-secret-key-generator/">miniwebtool</a>
   - Edit core/settings.py line 36
     - Change SECRET_KEY = '<font color="red">9ea*4cwjzn@e9-qhsmkj^%94$8e$=0rgb@%6ort#9(sacs15ui</font>' to new KEY
@@ -77,7 +77,7 @@ The Template can be used out of the box for any type of website/webapp
     - $ python manage.py runserver
     - Open 127.0.0.1:8000 and login
 
-+ 4. OPTIONAL CONFIGURATION
++ OPTIONAL CONFIGURATION
   - EMAIL Settings
     - Open core/settings.py and edit with your detail on line 198 to 202
 
