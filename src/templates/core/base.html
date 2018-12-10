@@ -1,0 +1,322 @@
+{% load staticfiles %}
+{% load i18n %}
+{% load class_name %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>{{global_settings.site_name}}</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="{% static 'index/css/bootstrap.min.css' %}" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="{% static 'index/css/owl.carousel.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'index/css/owl.theme.default.css' %}" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="{% static 'index/css/magnific-popup.css' %}" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="{% static 'index/css/font-awesome.min.css' %}">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="{% static 'index/css/style.css' %}" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js' %}"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js' %}"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url({% static 'index/img/background1.jpg' %});">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="{% url 'index' %}">
+							<img class="logo" src="{% static 'index/img/logo.png' %}" alt="logo">
+							<img class="logo-alt" src="{% static 'index/img/logo-alt.png' %}" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#service">Services</a></li>
+					<li><a href="#pricing">Prices</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#contact">Contact</a></li>
+					{% if request.user.is_authenticated %}
+					<li><a href="">Logout</a></li>
+					<script>
+					window.location = "{% url 'account_login' %}";
+					</script>
+					{% else %}
+					<li><a href="{% url 'account_login' %}">Login</a></li>
+					<li><a href="{% url 'account_signup' %}">Signup</a></li>
+					{% endif %}
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+
+{% block content %}
+
+{% endblock %}
+	<!-- Blog -->
+	<div id="blog" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Recents news</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- blog -->
+				<div class="col-md-4">
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive" src="{% static 'index/img/blog1.jpg' %}" alt="">
+						</div>
+						<div class="blog-content">
+							<ul class="blog-meta">
+								<li><i class="fa fa-user"></i>John doe</li>
+								<li><i class="fa fa-clock-o"></i>18 Oct</li>
+								<li><i class="fa fa-comments"></i>57</li>
+							</ul>
+							<h3>Molestie at elementum eu facilisis sed odio</h3>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+							<a href="blog-single.html">Read more</a>
+						</div>
+					</div>
+				</div>
+				<!-- /blog -->
+
+				<!-- blog -->
+				<div class="col-md-4">
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive" src="{% static 'index/img/blog2.jpg' %}" alt="">
+						</div>
+						<div class="blog-content">
+							<ul class="blog-meta">
+								<li><i class="fa fa-user"></i>John doe</li>
+								<li><i class="fa fa-clock-o"></i>18 Oct</li>
+								<li><i class="fa fa-comments"></i>57</li>
+							</ul>
+							<h3>Molestie at elementum eu facilisis sed odio</h3>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+							<a href="blog-single.html">Read more</a>
+						</div>
+					</div>
+				</div>
+				<!-- /blog -->
+
+				<!-- blog -->
+				<div class="col-md-4">
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive"  src="{% static 'index/img/blog3.jpg' %}" alt="">
+						</div>
+						<div class="blog-content">
+							<ul class="blog-meta">
+								<li><i class="fa fa-user"></i>John doe</li>
+								<li><i class="fa fa-clock-o"></i>18 Oct</li>
+								<li><i class="fa fa-comments"></i>57</li>
+							</ul>
+							<h3>Molestie at elementum eu facilisis sed odio</h3>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+							<a href="blog-single.html">Read more</a>
+						</div>
+					</div>
+				</div>
+				<!-- /blog -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Blog -->
+
+	<!-- Contact -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">Get in touch</h2>
+				</div>
+				<!-- /Section-header -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Phone</h3>
+						<p>{{global_settings.site_phone}}</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>{{global_settings.site_email}}</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marker"></i>
+						<h3>Address</h3>
+						<p>{{global_settings.site_address}}</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form class="contact-form">
+						<input type="text" class="input" placeholder="Name">
+						<input type="email" class="input" placeholder="Email">
+						<input type="text" class="input" placeholder="Subject">
+						<textarea class="input" placeholder="Message"></textarea>
+						<button type="submit" class="main-btn">Send message</button>
+					</form>
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="{% url 'index' %}"><img src="{% static 'index/img/logo-alt.png' %}" alt="logo"></a>
+					</div>
+					<!-- /footer logo -->
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © {{global_settings.year}}. {{global_settings.site_name}}. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="{% static 'index/js/jquery.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'index/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'index/js/owl.carousel.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'index/js/jquery.magnific-popup.js' %}"></script>
+	<script type="text/javascript" src="{% static 'index/js/main.js' %}"></script>
+
+</body>
+
+</html>

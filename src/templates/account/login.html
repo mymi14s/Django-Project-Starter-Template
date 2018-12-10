@@ -1,0 +1,46 @@
+{% extends "account/base.html" %}
+{% load bootstrap4 %}
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block subtitle %}
+  Signin to continue
+{% endblock %}
+{% block content %}
+
+<form class="form-signin login" method="POST" action="{% url 'account_login' %}">
+  {% csrf_token %}
+  {% bootstrap_form form %}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+
+    <a class="text-center" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+    <a class="pull-right" href="{{ signup_url }}">{% trans "Signup" %}</a><br>
+
+
+  <button class="btn btn-lg btn-primary btn-block primaryAction" type="submit">{% trans "Sign In" %}</button>
+</form>
+<div class="form-signin">
+
+
+{% get_providers as socialaccount_providers %}
+
+{% if socialaccount_providers %}
+<p>{% blocktrans with site.name as site_name %}Please sign in with one
+of your existing third party accounts.{% endblocktrans %}</p>
+
+  <div class="text-center">
+    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+  </div>
+
+{% include "socialaccount/snippets/login_extra.html" %}
+
+{% else %}
+<p>{% blocktrans %}If you have not created an account yet, then please
+<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+{% endif %}
+</div>
+
+{% endblock %}

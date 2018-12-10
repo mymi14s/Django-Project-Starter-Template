@@ -1,0 +1,6 @@
+*.pyc
+*~
+__pycache__
+*.sqlite3
+migrations
+.DS_Store
