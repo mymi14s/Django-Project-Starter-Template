@@ -81,7 +81,9 @@ The Template can be used out of the box for any type of website/webapp
   - Create SUPERUSER
     - $ python manage.py createsuperuser
     - $ python manage.py runserver
-    - Open 127.0.0.1:8000 and login
+    - Open http://127.0.0.1:8000/admin/setting/setting/add/ and login
+    - Enter Site Information and click save
+    - Click on view site from the top menu. ENJOY
 
 + OPTIONAL CONFIGURATION
   - EMAIL Settings
@@ -94,12 +96,15 @@ The Template can be used out of the box for any type of website/webapp
       - EMAIL_PORT = 587
 
   - Social Accounts
+    - Setup social buttons from core/settings.py from line 62  
 
   - MYSQL Configuration requires Mysqlclient
   - Visit <a href="https://pypi.org/project/mysqlclient/">Mysql Client</a>
   - Use the instruction provided.
-  - Edit core/settings with your mysql database info.
+  - Edit core/settings with your mysql database info from line 128.
 
 + CREDITS
+  - Anthony N. Dorothy
+  - Pius A. Chukwuelue
   - <a href="https://github.com/pratikborsadiya/vali-admin">Pratik Borsadiya<a/>
   - <a href="https://colorlib.com/demo?theme=creative-agency">ColorLib</a>

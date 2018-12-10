@@ -61,7 +61,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     # ... include the providers you want to enable:
     # 'allauth.socialaccount.providers.google',
-    # 'allauth.socialaccount.providers.facebook',
     # 'allauth.socialaccount.providers.instagram',
     # 'allauth.socialaccount.providers.twitter',
     # 'allauth.socialaccount.providers.linkedin',

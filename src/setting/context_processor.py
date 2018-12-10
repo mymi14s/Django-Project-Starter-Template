@@ -13,9 +13,11 @@ import datetime
 
 def setting(request):
     """Context processor function for global template content display."""
-
-    data = Setting.objects.filter(id=1)[0]
-    data.year = str(datetime.date.today())[:4]
+    if Setting.objects.filter(id=1):
+        data = Setting.objects.filter(id=1)[0]
+        data.year = str(datetime.date.today())[:4]
+    else:
+        data = ''
     #print(data.year, data.site_title, data.site_phone)
 
     return {'global_settings':data, 'request':request}
