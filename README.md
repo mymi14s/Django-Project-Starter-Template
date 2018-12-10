@@ -75,8 +75,7 @@ The Template can be used out of the box for any type of website/webapp
     - Change SECRET_KEY = '<font color="red">9ea*4cwjzn@e9-qhsmkj^%94$8e$=0rgb@%6ort#9(sacs15ui</font>' to new KEY
 
   - Make Migrations
-    - $ python manage.py migrate
-    - $ python manage.py makemigrations
+    - $ python manage.py makemigrations user setting
     - $ python manage.py migrate
 
   - Create SUPERUSER
@@ -93,6 +92,8 @@ The Template can be used out of the box for any type of website/webapp
       - EMAIL_HOST_USER = 'YOUR EMAIL'
       - EMAIL_HOST_PASSWORD = 'YOUR PASSWORD'
       - EMAIL_PORT = 587
+
+  - Social Accounts
 
   - MYSQL Configuration requires Mysqlclient
   - Visit <a href="https://pypi.org/project/mysqlclient/">Mysql Client</a>
