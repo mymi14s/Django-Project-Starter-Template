@@ -1,0 +1,13 @@
+{% extends "error/base.html" %}
+{% load i18n %}
+
+{% block title %}
+500
+{% endblock %}
+{% block content %}
+<div class="page-error tile">
+  <h1><i class="fa fa-exclamation-circle"></i> Error 500: Server Error</h1>
+  <p>There is some thing wrong with the server.</p>
+  <p><a class="btn btn-primary" href="javascript:window.history.back();">Go Back</a></p>
+</div>
+{% endblock %}
