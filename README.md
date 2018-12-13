@@ -46,6 +46,10 @@ The Template can be used out of the box for any type of website/webapp
   - Dashboard
   - Global System Setting (Site name, site title, site email, site address, etc)
 
++ Error Handler
+  - 404 Page not found
+  - 500 Server error
+
 + Email System
   - Email SMTP
 
